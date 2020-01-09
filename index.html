@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="task8.js"></script>
+</head>
+<body>
+	<style>
+	 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button
+	 {
+          -webkit-appearance: none;
+           margin: 0;
+     }
+     .bold{
+font-weight: bold;
+font-size: 18px;
+text-transform: uppercase;
+}
+	.clr{
+background-color: #F7B8A4; 	
+	}
+	.bg{
+		background-color:#A4B9F7;
+	}
+	.form-control:focus{
+		background-color: #7295BD;
+		color: white
+	}
+     
+     body{
+background-image: url('./images/img2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+  </style>
+ 
+ <div class="container-fluid bg p-3">
+	<h1 class="text-center text-white">Student Details</h1>
+</div>
+<div class="container mt-5 text-danger bold">
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<form name="myform">
+	<div class="form-group ">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control clr" id="usr" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="usr">Roll number:</label>
+      <input type="number" class="form-control clr" id="roll" placeholder="Enter your roll number" required >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Age:</label>
+      <input type="number" class="form-control clr" id="age"  placeholder="Enter your age" required></div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="mail" class="form-control clr" id="mail" placeholder="Enter your mail" required></div>
+   <div class="form-group">
+      <div class="form-group">
+      <label for="Department">Department</label>
+      <select class="form-control clr" id="dept" name="department" required>
+        <option>Mechanical Engineering</option>
+        <option>Electronic Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Computer Engineering</option>
+        <option>Marine Engineering</option>
+        <option>Electronics and Instrumentation Engineering</option>
+        <option>Information Technology</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="college">CGPA</label>
+      <input type="number" class="form-control clr" id="cg" placeholder="Enter your CGPA" required></div>
+   
+    <div class="form-group">
+      <label for="college">College</label>
+      <input type="text" class="form-control clr" id="college" placeholder="Enter your college name" required></div>
+   
+   <div class="form-group">
+      <label for="comment">About:</label>
+      <textarea class="form-control clr" rows="5" id="comment" name="text" placeholder="Tell something about yourself  (Like your co-curricular activities, sports and so on)" required></textarea>
+    </div>
+    </form>
+    </div>
+    <button class="btn btn-primary" type="submit" onclick="validate()">Submit</button>
+    
+    
+
+    
+<div class="col-lg-2"></div>
+</div>
+</div>
+</body>
+</html>
